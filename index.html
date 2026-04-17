@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesut Aslı Şimşek Bayan Kuaförü | Premium Women Hair Studio</title>
+  <meta name="description" content="Mesut Aslı Şimşek Bayan Kuaförü için ultra premium, dönüşüm odaklı, tek sayfa kadın kuaförü web sitesi." />
+  <meta name="theme-color" content="#0d0b11" />
+  <meta property="og:title" content="Mesut Aslı Şimşek Bayan Kuaförü" />
+  <meta property="og:description" content="Eskişehir Odunpazarı'nda premium kadın kuaförü deneyimi, hızlı iletişim ve güçlü dönüşüm odaklı tasarım." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0d0b11;
+      --bg2:#17131b;
+      --bg3:#261a22;
+      --panel:rgba(255,255,255,.05);
+      --line:rgba(255,255,255,.1);
+      --text:#f8f4ee;
+      --muted:#c3b6be;
+      --champ:#dec0a1;
+      --rose:#9c6f7e;
+      --wine:#5e3947;
+      --shadow:0 24px 70px rgba(0,0,0,.36);
+      --max:1280px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope',sans-serif;
+      color:var(--text);
+      overflow-x:hidden;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(222,192,161,.12), transparent 22%),
+        radial-gradient(circle at 85% 15%, rgba(156,111,126,.14), transparent 18%),
+        radial-gradient(circle at 50% 100%, rgba(94,57,71,.1), transparent 24%),
+        linear-gradient(180deg,#0d0b11 0%, #17131b 55%, #0b0910 100%);
+    }
+    a{text-decoration:none;color:inherit}
+    .container{width:min(calc(100% - 32px),var(--max));margin:0 auto}
+    .section{padding:96px 0;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);box-shadow:var(--shadow);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#f1dec8}
+    .eyebrow::before{content:"";width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--champ),var(--rose))}
+    .display,.title{font-family:'Playfair Display',serif;letter-spacing:-.04em;line-height:.95}
+    .display{font-size:clamp(3.4rem,7vw,6.6rem);margin:18px 0;max-width:11ch}
+    .title{font-size:clamp(2.1rem,4vw,4rem);margin:0 0 12px}
+    .lead{font-size:1.05rem;line-height:1.84;color:var(--muted);max-width:68ch}
+    .muted{color:var(--muted)}
+
+    .site-header{position:sticky;top:0;z-index:120;background:rgba(13,11,17,.72);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06);transition:transform .34s ease}
+    .site-header.hide{transform:translateY(-100%)}
+    .nav{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand-mark{width:56px;height:56px;border-radius:18px;position:relative;overflow:hidden;background:linear-gradient(145deg,#18131b,#5e3947 48%,#dec0a1);box-shadow:var(--shadow)}
+    .brand-mark::before,.brand-mark::after{content:"";position:absolute;background:rgba(255,255,255,.18);border-radius:999px}
+    .brand-mark::before{width:90px;height:14px;left:-18px;top:17px;transform:rotate(-34deg)}
+    .brand-mark::after{width:62px;height:10px;right:-12px;bottom:13px;transform:rotate(-34deg)}
+    .brand strong{display:block;font-size:1rem}
+    .brand span{display:block;font-size:.82rem;color:var(--muted)}
+    .nav-links,.nav-actions{display:flex;align-items:center;gap:22px}
+    .nav-links a{font-size:.95rem;color:#f3eadf;position:relative}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:-8px;width:0;height:1px;background:linear-gradient(90deg,var(--champ),var(--rose));transition:.3s ease}
+    .nav-links a:hover::after{width:100%}
+    .menu-toggle{display:none;background:none;border:none;padding:8px;cursor:pointer}
+    .menu-toggle span{display:block;width:24px;height:2px;background:var(--text);margin:5px 0}
+    .mobile-menu{display:none;padding-bottom:18px}
+
+    .btn{min-height:54px;padding:0 22px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;border:1px solid transparent;transition:transform .26s ease, box-shadow .26s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--champ),#c99a72);color:#1b120d;box-shadow:0 18px 34px rgba(201,154,114,.22)}
+    .btn-secondary{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12);box-shadow:var(--shadow)}
+
+    .hero{padding:26px 0 74px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:28px;align-items:center}
+    .hero-copy{padding:54px 0}
+    .hero-copy .display{animation:floatTitle 7s ease-in-out infinite}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 28px}
+    .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .stat{padding:18px;border-radius:22px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+    .stat strong{display:block;font-size:1.08rem;margin-bottom:6px;color:#f5dec8}
+    .stat span{display:block;font-size:.92rem;line-height:1.55;color:var(--muted)}
+
+    .hero-visual{position:relative;min-height:760px;display:grid;place-items:center;perspective:1200px}
+    .hero-frame{width:min(100%,620px);height:742px;padding:18px;border-radius:44px;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.1);box-shadow:0 34px 90px rgba(0,0,0,.42);backdrop-filter:blur(14px);transform-style:preserve-3d}
+    .hero-core{position:relative;height:100%;border-radius:34px;overflow:hidden;border:1px solid rgba(255,255,255,.08);background:linear-gradient(160deg,#17121a 0%, #32212a 48%, #d1a67e 100%)}
+    .hero-core::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 16%, rgba(255,255,255,.08), transparent 18%),radial-gradient(circle at 78% 20%, rgba(222,192,161,.18), transparent 20%),linear-gradient(180deg,rgba(255,255,255,.03),rgba(0,0,0,.08))}
+    .hero-figure{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%);width:74%;height:82%;border-radius:280px 280px 42px 42px / 350px 350px 40px 40px;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(0,0,0,.08)),linear-gradient(145deg,#1b151c 0%, #61404f 50%, #dec0a1 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 32px 84px rgba(0,0,0,.26)}
+    .hero-halo{position:absolute;left:50%;top:35%;transform:translateX(-50%);width:70%;height:144px;border-radius:999px;background:radial-gradient(circle at 50% 50%, rgba(20,16,21,.94), rgba(22,19,26,.34) 62%, transparent 72%);filter:blur(10px)}
+    .hero-detail{position:absolute;right:36px;top:118px;width:160px;height:18px;border-radius:999px;background:linear-gradient(90deg,#f0dec9,#c79972,#f0dec9);transform:rotate(36deg);box-shadow:0 8px 24px rgba(0,0,0,.24)}
+    .hero-detail::after{content:"";position:absolute;right:-18px;top:-8px;width:34px;height:34px;border-radius:10px;background:linear-gradient(145deg,#2a212a,#8b6a50)}
+    .float-card,.float-pill,.float-note,.float-bottom{position:absolute;z-index:3;background:rgba(13,12,17,.64);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow)}
+    .float-card{left:22px;top:22px;max-width:260px;padding:16px 18px;border-radius:18px}
+    .float-card strong{display:block;margin-bottom:6px}
+    .float-card span,.float-note,.float-bottom span{font-size:.84rem;color:var(--muted);line-height:1.5}
+    .float-note{right:24px;top:26px;max-width:210px;padding:12px 14px;border-radius:16px;color:#f2ddca}
+    .float-pill{left:28px;bottom:134px;padding:10px 14px;border-radius:999px;font-size:.82rem;font-weight:800;color:#f7e3ce}
+    .float-bottom{right:20px;bottom:22px;max-width:268px;padding:18px;border-radius:20px}
+    .float-bottom strong{display:block;font-size:1.32rem;line-height:1.05;color:#f5deca}
+    .glow{position:absolute;border-radius:999px;filter:blur(54px);opacity:.42;pointer-events:none}
+    .glow.one{width:180px;height:180px;right:-10px;top:86px;background:rgba(222,192,161,.22)}
+    .glow.two{width:240px;height:240px;left:-26px;bottom:20px;background:rgba(156,111,126,.18)}
+
+    .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent);width:min(100%,900px);margin:0 auto}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}
+    .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card,.service-card,.review-card,.faq-card,.contact-card,.hours-card,.gallery-card,.cta-shell,.proof-card,.compare-copy-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow)}
+    .card,.proof-card{padding:26px;border-radius:26px}
+    .icon{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;margin-bottom:14px;background:linear-gradient(135deg,rgba(222,192,161,.18),rgba(94,57,71,.12));color:#f7decb;font-weight:900}
+    .card h3,.service-card h3,.review-card h3,.faq-card h3,.proof-card h3,.compare-copy-card h3{margin:0 0 10px;font-size:1.03rem}
+    .card p,.service-card p,.review-card p,.faq-card p,.proof-card p,.compare-copy-card p{margin:0;color:var(--muted);line-height:1.76}
+
+    .proof-grid,.compare-grid,.contact-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:18px}
+    .proof-card strong{display:block;font-family:'Playfair Display',serif;font-size:3rem;line-height:.95;letter-spacing:-.04em;margin-bottom:10px;color:#f1dbc6}
+
+    .compare-grid{grid-template-columns:1.02fr .98fr;gap:24px;align-items:stretch}
+    .compare-stage{min-height:580px;position:relative;overflow:hidden;border-radius:32px;background:linear-gradient(160deg,#17121a,#30222c 58%,#8d6b53);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+    .compare-stage::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 24% 18%, rgba(255,255,255,.08), transparent 18%),radial-gradient(circle at 76% 20%, rgba(222,192,161,.14), transparent 20%),linear-gradient(180deg,rgba(255,255,255,.03),rgba(0,0,0,.08))}
+    .compare-sides{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr}.compare-sides .side{position:relative;padding:26px}.compare-sides .side::before{content:"";position:absolute;inset:20px;border-radius:24px;border:1px solid rgba(255,255,255,.14)}
+    .compare-sides .before::after,.compare-sides .after::after{content:"";position:absolute;inset:20px;border-radius:24px}
+    .compare-sides .before::after{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01)),radial-gradient(circle at top center,rgba(255,255,255,.06),transparent 28%),linear-gradient(145deg,rgba(33,27,35,.46),rgba(20,18,24,.38))}
+    .compare-sides .after::after{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.01)),radial-gradient(circle at top center,rgba(222,192,161,.14),transparent 28%),linear-gradient(145deg,rgba(94,67,79,.38),rgba(222,192,161,.16))}
+    .compare-divider{position:absolute;left:50%;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,var(--champ),transparent);transform:translateX(-50%);z-index:2}
+    .compare-handle{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:74px;height:74px;border-radius:999px;background:#19141b;display:grid;place-items:center;z-index:3;border:1px solid rgba(255,255,255,.1);box-shadow:var(--shadow);font-weight:900;color:#f5dec8}
+    .compare-label{position:absolute;left:32px;bottom:32px;padding:10px 14px;border-radius:999px;background:rgba(15,13,18,.84);font-size:.84rem;font-weight:800;color:#f6dfca;z-index:2}
+    .compare-copy{display:grid;gap:18px}.compare-copy-card{padding:24px;border-radius:24px}
+
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service-card{padding:24px;border-radius:26px;position:relative;overflow:hidden}
+    .service-card::after{content:"";position:absolute;right:-18px;top:-18px;width:120px;height:120px;border-radius:32px;background:linear-gradient(135deg,rgba(222,192,161,.14),rgba(94,57,71,.10));transform:rotate(14deg)}
+    .tag{display:inline-flex;padding:9px 12px;border-radius:999px;background:rgba(222,192,161,.12);font-size:.78rem;font-weight:800;color:#f7dec8;margin-bottom:14px}
+
+    .review-track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(340px,1fr);gap:18px;overflow:auto;scrollbar-width:none;padding-bottom:8px}.review-track::-webkit-scrollbar{display:none}
+    .review-card{padding:24px;border-radius:24px;min-height:300px}.review-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.name{font-weight:800}.stars{letter-spacing:.16em;color:var(--champ)}
+
+    .gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:230px 230px;gap:18px}
+    .gallery-card{position:relative;overflow:hidden;border-radius:28px;padding:22px;transition:transform .35s ease, box-shadow .35s ease}.gallery-card:hover{transform:translateY(-6px) scale(1.01)}
+    .gallery-card.large{grid-row:1 / span 2}.gallery-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(0,0,0,.34)),radial-gradient(circle at top left,rgba(255,255,255,.1),transparent 30%),linear-gradient(145deg,#18131a,#2b1f27 56%,#8b6248)}
+    .gallery-card:nth-child(2)::before{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(0,0,0,.34)),radial-gradient(circle at top left,rgba(255,255,255,.1),transparent 30%),linear-gradient(145deg,#18131a,#2d2028 56%,#a2785f)}
+    .gallery-card:nth-child(3)::before{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(0,0,0,.34)),radial-gradient(circle at top left,rgba(255,255,255,.1),transparent 30%),linear-gradient(145deg,#161218,#2a1f26 56%,#c59e75)}
+    .gallery-card:nth-child(4)::before{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(0,0,0,.34)),radial-gradient(circle at top left,rgba(255,255,255,.1),transparent 30%),linear-gradient(145deg,#151118,#2a1c24 56%,#6d4855)}
+    .gallery-card>*{position:relative;z-index:1}.gallery-card span{display:inline-flex;padding:9px 12px;border-radius:999px;background:rgba(17,15,20,.84);font-size:.8rem;font-weight:800;color:#f6ddca}.gallery-card h3{margin:12px 0 0;max-width:12ch;font-size:1.18rem;line-height:1.06}
+
+    .cta-shell{padding:38px;border-radius:32px;background:linear-gradient(135deg,#19131b,#33232d 58%,#b98b67);display:flex;align-items:center;justify-content:space-between;gap:18px}.cta-shell p{margin:10px 0 0;max-width:56ch;line-height:1.75;color:#f0e0d3}
+    .faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.faq-card,.contact-card,.hours-card{padding:24px;border-radius:24px}.contact-stack{display:grid;gap:18px}
+    .row{padding:14px 0;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:none;padding-bottom:0}.label{display:block;font-size:.8rem;font-weight:800;color:#f3ddca;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+    .hours-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}.hours-row:last-child{border-bottom:none;padding-bottom:0}.hours-row span:last-child{font-weight:800}
+    .map{min-height:100%;overflow:hidden;border-radius:28px;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);background:#fff}.map iframe{width:100%;height:100%;min-height:620px;border:0}
+    footer{padding:28px 0 112px;border-top:1px solid rgba(255,255,255,.06)}.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted)}.footer-note{font-size:.92rem;color:var(--muted)}.credit{font-size:.78rem;color:#e5c9aa;opacity:.9}
+    .floating-cta{position:fixed;left:16px;right:16px;bottom:16px;z-index:80;display:none;grid-template-columns:1fr 1fr;gap:12px}
+    [data-reveal]{opacity:0;transform:translateY(30px);transition:opacity .8s ease, transform .8s ease}[data-reveal].is-visible{opacity:1;transform:none}
+    @keyframes floatTitle{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    @media (max-width:1080px){.hero-grid,.proof-grid,.compare-grid,.contact-grid{grid-template-columns:1fr}.cards-4{grid-template-columns:repeat(2,1fr)}.services-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 220px 220px}.gallery-card.large{grid-column:1 / span 2;grid-row:auto}.hero-frame{height:640px}.cta-shell{flex-direction:column;align-items:flex-start}}
+    @media (max-width:780px){.section{padding:76px 0}.nav-links,.nav-actions{display:none}.menu-toggle{display:block}.mobile-menu{gap:12px}.hero-stats,.cards-4,.services-grid,.faq-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr;grid-template-rows:auto}.gallery-card,.gallery-card.large{min-height:220px}.review-track{grid-auto-columns:86%}.section-head{flex-direction:column;align-items:flex-start}.map iframe{min-height:360px}.floating-cta{display:grid}.float-note{display:none}}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none !important;transition:none !important}[data-reveal]{opacity:1;transform:none}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HairSalon",
+    "name":"Mesut Aslı Şimşek Bayan Kuaförü",
+    "address":{"@type":"PostalAddress","streetAddress":"Arifiye, İnhisar Sk. No:52/A","addressLocality":"Odunpazarı","addressRegion":"Eskişehir","addressCountry":"TR"},
+    "telephone":"+90 554 218 79 40",
+    "url":"https://www.instagram.com/mesutasli.simsek.bayan_kuaforu/",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"126"},
+    "openingHours":["Mo 08:00-20:00","Tu Closed","We 08:00-20:00","Th 08:00-20:00","Fr 08:00-20:00","Sa 08:00-20:00","Su 11:00-18:00"],
+    "sameAs":["https://www.instagram.com/mesutasli.simsek.bayan_kuaforu/"]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Mesut Aslı Şimşek Bayan Kuaförü anasayfa">
+        <div class="brand-mark"></div>
+        <div>
+          <strong>Mesut Aslı Şimşek Bayan Kuaförü</strong>
+          <span>Women Hair · Color · Bridal · Beauty</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#once-sonra">Öncesi Sonrası</a>
+        <a href="#yorumlar">Yorumlar</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-secondary" href="tel:+905542187940">Ara</a>
+        <a class="btn btn-primary" href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">WhatsApp</a>
+      </div>
+      <button class="menu-toggle" id="menuBtn" aria-label="Menü"><span></span><span></span><span></span></button>
+    </div>
+    <div class="container mobile-menu" id="mobileMenu">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#once-sonra">Öncesi Sonrası</a>
+      <a href="#yorumlar">Yorumlar</a>
+      <a href="#iletisim">İletişim</a>
+      <a class="btn btn-secondary" href="tel:+905542187940">Telefonla Ara</a>
+      <a class="btn btn-primary" href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">WhatsApp'tan Yaz</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <div class="eyebrow">4.8 puan · 126 yorum · premium kadın kuaförü · hızlı randevu akışı</div>
+          <h1 class="display">Eskişehir’de zarif görünüm ve hızlı iletişimi bir araya getiren premium kadın kuaförü deneyimi</h1>
+          <p class="lead">Mesut Aslı Şimşek Bayan Kuaförü için base sistemi daha feminen daha yumuşak ve şehir içi güven veren premium bir çizgiye oturttum. Elimizde yorum metinleri olmadığı için siteyi işletmenin görünen güçlü verileri üstünden kurdum. 4.8 puan, 126 yorum, net çalışma saatleri, konum, telefon ve Instagram akışı bu yapının ana omurgası oldu. Amaç sadece şık görünmek değil. Mobilde hızlıca arama ve WhatsApp dönüşümü almak, salonu daha ciddi göstermek ve güven hissini ilk ekranda vermekti.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">Hemen Randevu Al</a>
+            <a class="btn btn-secondary" href="tel:+905542187940">Telefonla Ara</a>
+            <a class="btn btn-secondary" href="#iletisim">Konumu Gör</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>Güçlü puan algısı</strong><span>4.8 puan ve 126 yorum ilk bakışta güven üretiyor ve yeni müşterinin tereddüdünü düşürüyor.</span></div>
+            <div class="stat"><strong>Net iletişim</strong><span>Telefon ve WhatsApp akışı sayfanın her yerine işlendi ki kullanıcı düşünmeden aksiyon alsın.</span></div>
+            <div class="stat"><strong>Premium kadın odağı</strong><span>Renk, bakım, gelin başı ve güzellik çizgisine uygun daha rafine bir salon kimliği kuruldu.</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="glow one"></div>
+          <div class="glow two"></div>
+          <div class="hero-frame" id="heroParallax">
+            <div class="hero-core">
+              <div class="hero-halo"></div>
+              <div class="hero-detail"></div>
+              <div class="hero-figure"></div>
+              <div class="float-card">
+                <strong>Premium women studio</strong>
+                <span>Daha feminen, daha davetkar ve daha değerli görünen bir salon kimliği için hazırlandı.</span>
+              </div>
+              <div class="float-note">Güçlü puan, net konum ve hızlı iletişim birleşince site direkt dönüşüm aracı gibi çalışır.</div>
+              <div class="float-pill">Saç Boyama · Gelin Başı · Ağda · Makyaj · Kutu Örgü · Kıvırcık Saç</div>
+              <div class="float-bottom">
+                <strong>Şehir içi premium görünüm</strong>
+                <span>İlk bakışta kurumsal, temiz ve güven veren hissi yükseltmek için rafine bir görsel sistem kuruldu.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <section class="section">
+      <div class="container proof-grid">
+        <article class="proof-card" data-reveal>
+          <h3>Bu salonun satış gücü</h3>
+          <strong>Güven veren puanı premium görünümle birleştirmek</strong>
+          <p>Mesut Aslı Şimşek Bayan Kuaförü için şu an elimizdeki en güçlü veri tabanı puan, yorum sayısı, net lokasyon ve iletişim bilgileri. Bu yüzden siteyi laf kalabalığı yerine güveni hızlı veren, profesyonel görünen ve mobil dönüşümü yükselten bir yapıda tuttum. Gerçek müşteri yorumları ve görseller eklendiğinde bu sistem çok daha sert satış yapar.</p>
+        </article>
+        <article class="proof-card" data-reveal>
+          <h3>Marka hissi</h3>
+          <p>Feminen, zarif, şehir içi ulaşılabilir ama ucuz görünmeyen bir premium kadın kuaförü. Ton tamamen buna göre kuruldu.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cards-4">
+          <article class="card" data-reveal><div class="icon">01</div><h3>126 yorumluk sosyal kanıt</h3><p>İnsanlar salona ilk kez gelirken puan ve yorum sayısını en büyük güven tetikleyicilerden biri olarak görüyor.</p></article>
+          <article class="card" data-reveal><div class="icon">02</div><h3>Konum avantajı</h3><p>Odunpazarı içinde açık adres ve harita entegrasyonu karar süresini kısaltıyor.</p></article>
+          <article class="card" data-reveal><div class="icon">03</div><h3>Özel gün odağı</h3><p>Gelin başı ve makyaj gibi alanlar premium algıyı direkt yukarı taşıyor.</p></article>
+          <article class="card" data-reveal><div class="icon">04</div><h3>Hızlı randevu erişimi</h3><p>Telefon ve WhatsApp tek dokunuşla ulaşılabilir olduğu için mobil tarafta kayıp azalıyor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="once-sonra">
+      <div class="container compare-grid">
+        <div class="compare-stage" data-reveal>
+          <div class="compare-sides">
+            <div class="side before"><div class="compare-label">Önce</div></div>
+            <div class="side after"><div class="compare-label">Sonra</div></div>
+          </div>
+          <div class="compare-divider"></div>
+          <div class="compare-handle">⇄</div>
+        </div>
+        <div class="compare-copy">
+          <div>
+            <div class="eyebrow">Before After Alanı</div>
+            <h2 class="title">Dönüşüm hissini satışa çeviren vitrin alanı</h2>
+            <p class="lead">Kadın kuaförü sitelerinde before after alanı boş süs değil. Özellikle saç boyama, kesim, gelin başı ve bakım tarafında müşterinin aklındaki sonucu görselleştiren en kritik satış alanlarından biri. Gerçek foto eklendiğinde bu bölüm çok sert çalışır.</p>
+          </div>
+          <article class="compare-copy-card" data-reveal><h3>Karar vermeyi hızlandırır</h3><p>Kararsız kullanıcı gerçek dönüşüm görünce yazma ihtimali yükselir.</p></article>
+          <article class="compare-copy-card" data-reveal><h3>Premium algıyı büyütür</h3><p>Kaliteli salon fotoğraflarıyla birleştiğinde fiyat algısı da yukarı çıkar.</p></article>
+          <a class="btn btn-primary" href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">Randevu İçin Yaz</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hizmetler">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div><div class="eyebrow">Hizmetler</div><h2 class="title">Salonun premium görünümünü destekleyen seçilmiş hizmet alanları</h2></div>
+          <p class="lead">Verdiğin veriye göre çekirdek hizmetleri premium dille vitrine taşıdım.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card" data-reveal><span class="tag">Color Beauty</span><h3>Saç Boyama</h3><p>Renk değişimi ve parlak görünüm isteyen müşteriler için güçlü ana hizmet alanı.</p></article>
+          <article class="service-card" data-reveal><span class="tag">Hair Styling</span><h3>Kuaförlük ve Şekillendirme</h3><p>Günlük görünümden özel güne kadar uzanan temel saç tasarım tarafı.</p></article>
+          <article class="service-card" data-reveal><span class="tag">Bridal Touch</span><h3>Gelin Başı</h3><p>Özel gün hazırlığında salonun değer algısını büyüten yüksek potansiyelli hizmet.</p></article>
+          <article class="service-card" data-reveal><span class="tag">Beauty Care</span><h3>Makyaj Hizmetleri</h3><p>Saç ve makyajı bir araya getiren paket hissi salonu daha kapsamlı gösterir.</p></article>
+          <article class="service-card" data-reveal><span class="tag">Texture</span><h3>Kıvırcık Saç ve Kutu Örgü</h3><p>Daha niş taleplere cevap verebilen yapı, işletmeyi sıradan salonlardan ayırır.</p></article>
+          <article class="service-card" data-reveal><span class="tag">Support</span><h3>Ağda ve Tamamlayıcı Hizmetler</h3><p>Tek noktada toparlanan bakım deneyimi, tekrar tercih oranını artırır.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div><div class="eyebrow">Galeri Vitrini</div><h2 class="title">Yumuşak premium tonlarla kurulmuş feminen salon estetiği</h2></div>
+          <p class="lead">Bu işletme için daha sıcak, daha davetkar ama yine pahalı hissettiren bir görsel dünya kuruldu.</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card large" data-reveal><span>Salon Mood</span><h3>İlk bakışta temiz ve premium his veren kadın kuaförü atmosferi</h3></article>
+          <article class="gallery-card" data-reveal><span>Hair Result</span><h3>Renk ve parlaklık hissi</h3></article>
+          <article class="gallery-card" data-reveal><span>Bridal Prep</span><h3>Özel gün hazırlık alanı</h3></article>
+          <article class="gallery-card" data-reveal><span>Soft Luxury</span><h3>Zarif ve sıcak stüdyo kimliği</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="yorumlar">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <div><div class="eyebrow">Yorumlar ve Güven</div><h2 class="title">126 yorumluk güçlü sosyal kanıtı öne çıkaran güven alanı</h2></div>
+          <p class="lead">Şu an yorum metni paylaşılmadığı için alanı stratejik şekilde hazırladım. Gerçek yorumlar geldiğinde bu blok çok daha güçlü satış yapacak.</p>
+        </div>
+        <div class="review-track" id="reviewTrack">
+          <article class="review-card" data-reveal><div class="review-top"><div><div class="name">4.8 puan algısı</div><div class="muted">İlk güven katmanı</div></div><div class="stars">★★★★★</div></div><p>Yüksek puan ve 126 yorum salonun yeni müşteride oluşturduğu çekinceleri azaltır ve iletişime geçmeyi kolaylaştırır.</p></article>
+          <article class="review-card" data-reveal><div class="review-top"><div><div class="name">Kadın kuaförü odağı</div><div class="muted">Renk bakım özel gün çizgisi</div></div><div class="stars">★★★★★</div></div><p>Renk, saç, özel gün ve güzellik tarafını birlikte sunabilen yapı premium paket algısı yaratır.</p></article>
+          <article class="review-card" data-reveal><div class="review-top"><div><div class="name">Gerçek yorum alanı hazır</div><div class="muted">Sonradan güçlendirmeye açık</div></div><div class="stars">★★★★★</div></div><p>Google yorumlarından 6 ila 8 güçlü metin eklenirse bu bölüm dönüşüm oranını belirgin yükseltir.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-shell" data-reveal>
+          <div>
+            <h2 class="title" style="margin:0">Randevunuzu oluşturun ve premium salon deneyimine hızlıca ulaşın</h2>
+            <p>Bu yapı mobilde hızlı aksiyon aldırmak için kuruldu. Kullanıcı ister arar ister WhatsApp’tan yazar ve direkt dönüşüme gider.</p>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <a class="btn btn-primary" href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">WhatsApp'tan Yaz</a>
+            <a class="btn btn-secondary" href="tel:+905542187940">Telefonla Ara</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal><div><div class="eyebrow">Sık Sorulanlar</div><h2 class="title">Kararsız kullanıcıyı aşağı indirmeyen net cevaplar</h2></div></div>
+        <div class="faq-grid">
+          <article class="faq-card" data-reveal><h3>Salon nerede</h3><p>Arifiye, İnhisar Sokak No:52/A, 26010 Odunpazarı Eskişehir adresinde konumlanıyor.</p></article>
+          <article class="faq-card" data-reveal><h3>En hızlı iletişim yöntemi ne</h3><p>Sayfadaki WhatsApp ve arama butonlarıyla direkt iletişime geçilebiliyor.</p></article>
+          <article class="faq-card" data-reveal><h3>Hangi gün kapalı</h3><p>Gönderdiğin bilgiye göre salon salı günü kapalı.</p></article>
+          <article class="faq-card" data-reveal><h3>Bu site neye odaklanıyor</h3><p>Sadece şıklığa değil. Güven, profesyonellik ve randevu dönüşümüne odaklanıyor.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="iletisim">
+      <div class="container contact-grid">
+        <div class="contact-stack">
+          <article class="contact-card" data-reveal>
+            <h3>İletişim</h3>
+            <div class="row"><span class="label">Telefon</span><a href="tel:+905542187940">0554 218 79 40</a></div>
+            <div class="row"><span class="label">WhatsApp</span><a href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">Randevu için yazın</a></div>
+            <div class="row"><span class="label">Instagram</span><a href="https://www.instagram.com/mesutasli.simsek.bayan_kuaforu/" target="_blank" rel="noreferrer">@mesutasli.simsek.bayan_kuaforu</a></div>
+            <div class="row"><span class="label">Adres</span><span>Arifiye, İnhisar Sk. No:52/A, 26010 Odunpazarı / Eskişehir</span></div>
+          </article>
+          <article class="hours-card" data-reveal>
+            <h3>Çalışma Saatleri</h3>
+            <div class="hours-row"><span>Pazartesi</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Salı</span><span>Kapalı</span></div>
+            <div class="hours-row"><span>Çarşamba</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Perşembe</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Cuma</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Cumartesi</span><span>08:00 – 20:00</span></div>
+            <div class="hours-row"><span>Pazar</span><span>11:00 – 18:00</span></div>
+          </article>
+        </div>
+        <div class="map" data-reveal>
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mesut Aslı Şimşek Bayan Kuaförü konum" src="https://www.google.com/maps?q=Arifiye%20%C4%B0nhisar%20Sk.%20No:52/A%20Odunpazar%C4%B1%20Eski%C5%9Fehir&z=15&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Mesut Aslı Şimşek Bayan Kuaförü</strong>
+        <div class="footer-note">Odunpazarı Eskişehir’de premium kadın kuaförü deneyimi</div>
+        <div class="credit">site by penumbra digital</div>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Anasayfa</a><a href="#hizmetler">Hizmetler</a><a href="#yorumlar">Yorumlar</a><a href="#iletisim">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-cta">
+    <a class="btn btn-secondary" href="tel:+905542187940">Ara</a>
+    <a class="btn btn-primary" href="https://wa.me/905542187940?text=Merhaba%20Mesut%20Asl%C4%B1%20%C5%9Eim%C5%9Fek%20Bayan%20Kuaf%C3%B6r%C3%BC%20i%C3%A7in%20randevu%20almak%20istiyorum" target="_blank" rel="noreferrer">WhatsApp</a>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if(menuBtn){menuBtn.addEventListener('click',()=>{mobileMenu.style.display = mobileMenu.style.display === 'grid' ? 'none' : 'grid';});}
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce){reveals.forEach(el=>el.classList.add('is-visible'));} else {
+      const io = new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');io.unobserve(entry.target);}})},{threshold:.14});
+      reveals.forEach(el=>io.observe(el));
+    }
+    const reviewTrack = document.getElementById('reviewTrack');
+    let autoScroll;
+    function startAuto(){if(!reviewTrack || window.innerWidth < 781 || reduce) return;clearInterval(autoScroll);autoScroll = setInterval(()=>{const max = reviewTrack.scrollWidth - reviewTrack.clientWidth;const next = reviewTrack.scrollLeft + 350;reviewTrack.scrollTo({left: next >= max ? 0 : next, behavior:'smooth'});}, 3600);}
+    reviewTrack?.addEventListener('pointerdown',()=>clearInterval(autoScroll)); reviewTrack?.addEventListener('pointerup',startAuto); window.addEventListener('resize',startAuto); startAuto();
+    let lastY = window.scrollY; const header = document.getElementById('siteHeader'); window.addEventListener('scroll',()=>{const currentY = window.scrollY; if(currentY > lastY && currentY > 120){header.classList.add('hide');} else {header.classList.remove('hide');} lastY = currentY;},{passive:true});
+    const heroParallax = document.getElementById('heroParallax');
+    if(heroParallax && window.innerWidth > 1024 && !reduce){let mouseX = 0, mouseY = 0, targetX = 0, targetY = 0; window.addEventListener('mousemove',(e)=>{targetX = (e.clientX / window.innerWidth - .5) * 12; targetY = (e.clientY / window.innerHeight - .5) * 10;}); function animateParallax(){mouseX += (targetX - mouseX) * .08; mouseY += (targetY - mouseY) * .08; heroParallax.style.transform = `rotateY(${mouseX * .35}deg) rotateX(${-mouseY * .35}deg)`; requestAnimationFrame(animateParallax);} animateParallax();}
+  </script>
+</body>
+</html>
